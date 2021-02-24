@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>SecuritEEE</title>
+</head>
+
+<body>
+  <style>
+  .body{
+    background-color:
+  }
+    .image {
+      position: fixed;
+      background-image: url('image.jpg');
+      width: 100%;
+      max-width: 1800px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 60px;
+    }
+
+
+    .temp{
+      width:200px;
+      height:200px;
+      border-radius: 60px;
+      background-color: #ff8657;"
+    }
+    .humidity{
+      right: 150px;
+      width:200px;
+      height:200px;
+      border-radius: 60px;
+      background-color: #64ce94;
+    }
+
+    .footer {
+      position: fixed;
+      padding: 10px 10px 0px 10px;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: black;
+    }
+
+    .header {
+      position: absolute;
+      padding: 10px 10px 0px 10px;
+      top: 0;
+      width: 100%;
+      height: 25px;
+      background: black;
+    }
+
+    .filler{
+      width:910px;
+      height:200px;
+      border-radius: 60px;
+      background-color: #a9d7f4;"
+    }
+
+    .reset{
+      height: 45px;
+      width: 100px;
+      background-color: #ed4a4a;
+
+    }
+
+
+  </style>
+  <div class="image" style="position: relative">
+    <p style="position: absolute; bottom: 0; right: 20px; color: white; font-size: 60px;">The Starry Night</p>
+    <div class="reset" style="position: absolute; top: 10px; left: 50px;text-align: center; color: white; font-size: 30px;">RESET</div>
+    <!--<div class="rectangle"></div>-->
+  </div>
+
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <!--<div class="filler">
+          <p style="position: absolute; left: 350px; color: white; font-size: 80px;">ToolBar</p>
+          <p style="position: absolute; top:80px; left: 100px; color: white; font-size: 30px;">Main Menu</p>
+          <p style="position: absolute; top:110px; left: 260px; color: white; font-size: 30px;">Display Settings</p>
+          <p style="position: absolute; top:110px; right: 225px; color: white; font-size: 30px;">Trouble Shooting</p>
+          <p style="position: absolute; top:80px; right: 100px; color: white; font-size: 30px;">Log Out</p>
+        </div>
+        <br>-->
+        <div class="card">
+          <div class="card-body">
+            <canvas id="sensor3"></canvas>
+          </div>
+        </div>
+        </div>
+        <br>
+      <div class="col-sm-4">
+        <!--<div class="card">
+          <div class="card-body">
+            <canvas id="sensor1"></canvas>
+          </div>
+        </div>-->
+        <div class="card">
+          <div class="card-body">
+            <canvas id="sensor2"></canvas>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-sm-6">
+          <div class="temp">
+            <p style="position: absolute; top: 30px; left: 30px; color: white; font-size: 25px;">TEMPERATURE</p>
+            <br>
+            <p style="position: absolute; bottom: 0px; left: 55px; color: white; font-size: 100px;">31°</p>
+          </div>
+        </div>
+          <div class="col-sm-6">
+          <div class="humidity">
+            <p style="position: absolute; top: 30px; left: 60px; color: white; font-size: 25px;">HUMIDITY</p>
+            <br>
+            <p style="position: absolute; bottom: 0px; left: 40px; color: white; font-size: 90px;">71%</p>
+          </div>
+        </div>
+        <div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="footer">
+  <p style="position: absolute; top: 5px; left: 50px; color: white; font-size: 25px;">Museum of Modern Art, New York</p>
+  <p style="position: absolute; top: 5px; right: 70px; color: white; font-size: 25px;">SecuritEEE</p>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

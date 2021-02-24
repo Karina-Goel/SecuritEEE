@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<title>SecuritEEE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://lh3.googleusercontent.com/25gw25n2TRNaPaXFBhKnvDIzgpMdO6M8zXwk6aXvJMl7HN2qS8rdqWYsgRhEdIr6M-OyBk-L8-Skx8_1vQZJyXdZzVILTwQ2pQurNeJy2MOS1PdUSyB8upx_UL7oG_ZTVYO7M8vNfCI=w2400?source=screenshot.guru");
+  /* background-image: url("https://lh3.googleusercontent.com/c1jj00_JQkfqHehZ0bE_v3Cr9hFDwd7nqkGLMalXP9njzY7QHZ1YZdmixKx95whgOR3wbMDtiRX_Vh0-0Ofayj4EIO3KEIhJT58eMEnjG3cEOlwwsbw-O5ZAa2x5EC_EBqoNusIJwN4=w2400?source=screenshot.guru"); */
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+img {
+  object-fit: contain;
+}
+
+iframe{
+  margin:0 auto;
+  display:block;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">SecuritEEE</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gallery" -->
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- <a href="https://lh3.googleusercontent.com/Yljrypts2zyimwLH9GuqveqoYuvg11VZv5A8rDzvXs4EefYKxCgJIQKiONXO0NzegZW2MrI9p4SDnGWfzjxdBfpqyUamnvInrX0G1XlMYus6KB9t5IutOeK8_AfhLp5YmqVf_Z5bAXM=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/Yljrypts2zyimwLH9GuqveqoYuvg11VZv5A8rDzvXs4EefYKxCgJIQKiONXO0NzegZW2MrI9p4SDnGWfzjxdBfpqyUamnvInrX0G1XlMYus6KB9t5IutOeK8_AfhLp5YmqVf_Z5bAXM=w491-h315-p-k" style="width:10%"/> </a> -->
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">SecuritEEE</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">SecuritEEE</span><br>
+    <span class="w3-large">The time for a basic lock and key safe is over.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Keep your valuables safe today</a></p>
+    <div class="w3-jumbo"><a href="https://lh3.googleusercontent.com/hyK8eGf9mGz1v_MVkbk-kSMvk7jxUBEzKE6HBqQ4b_j9QLQW1rhf9ZZjhXFrEBvxrTZrFw8cqRwGGs_bYT_2HdKPV-DJHOmudBjjrDisSZJzn2WTklLTwaCfLMw_JkrsNt9Vz6RErKg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/hyK8eGf9mGz1v_MVkbk-kSMvk7jxUBEzKE6HBqQ4b_j9QLQW1rhf9ZZjhXFrEBvxrTZrFw8cqRwGGs_bYT_2HdKPV-DJHOmudBjjrDisSZJzn2WTklLTwaCfLMw_JkrsNt9Vz6RErKg=w344-h315-p-k" alt="Background" style="width:50%"/> </a> </div>
+    <!-- <div class="w3-jumbo"><a href="https://lh3.googleusercontent.com/eSTlX2EMX9m7xR9KtmJqxbwIWhqV1SlSy2lJmJ3QtfLPKHpC7lTjrwj9fcc0tD7r4Ntw0O_yp-m17Cj3gBdrZ4GoEJoLcnPAR3M-DSCIrLVwD97WpLGF8epgn-td62BvjATWpphhPoc=w2400?source=screenshot.guru"></a> <img src="https://lh3.googleusercontent.com/eSTlX2EMX9m7xR9KtmJqxbwIWhqV1SlSy2lJmJ3QtfLPKHpC7lTjrwj9fcc0tD7r4Ntw0O_yp-m17Cj3gBdrZ4GoEJoLcnPAR3M-DSCIrLVwD97WpLGF8epgn-td62BvjATWpphhPoc=w491-h315-p-k" alt="Background" style="width:20%" /> </a></div> -->
+  </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+<!-- Video -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">WHY WE PROTECT</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+
+
+    <p>
+      <iframe width="854" height="480" align="middle" src="https://www.youtube.com/embed/IO5ccq-kuAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">System features</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-bell-o w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Alarm</p>
+      <p>Sounding system indicates when a valuable is removed.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-lightbulb-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Warning Lights</p>
+      <p>Red and Blue warning lights indicate when someone is too close to the valuable.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-bullseye w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Vibration</p>
+      <p>Vibration alert when the valuable is touched.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-user w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Touch ID</p>
+      <p>Indentification system to indicate an authorised handler.</p>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-pie-chart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Data Gathering</p>
+      <p>Records the number of visitors to a specific artwork.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-area-chart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Alarm Analytics</p>
+      <p>Records the number of alarm triggerings.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-thermometer w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Environment Stastics</p>
+      <p>Temperature and Humidity sensors.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-sort-alpha-asc w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Collection Log</p>
+      <p>Log of all the valuables within a collection.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know security" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know security.</h3>
+      <p><i class="fa fa-bell w3-margin-right"></i>The security features of our service include different alarm systems for intruder proximity, interaction and movement.</p>
+      <p><i class="fa fa-user-times w3-margin-right"></i>Different levels of alarms will deter both theives and clumsy children.</p>
+      <p><i class="fa fa-warning w3-margin-right"></i>System will include warning lights and vibration and sound alarms.</p>
+      <p><i class="fa fa-toggle-off w3-margin-right"></i>These can all be deactivated through a touch-ID protocol or through the interface.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Projects</a></p>
+    </div>
+    <div class="w3-col m6">
+      <!-- <a href="https://lh3.googleusercontent.com/sVIMpya5vcmGylDnMks5R1chR70XTaz0PqCpur8xtW_57cXS5n_radLRZvmvhu34z9Fmyghg_v0uXuHgYg49FGGTulUVZpkjJlFrYut-GVnCSE-SJ9B_Czt2sxCxjOSV1Tla_KUHD94=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/sVIMpya5vcmGylDnMks5R1chR70XTaz0PqCpur8xtW_57cXS5n_radLRZvmvhu34z9Fmyghg_v0uXuHgYg49FGGTulUVZpkjJlFrYut-GVnCSE-SJ9B_Czt2sxCxjOSV1Tla_KUHD94=w600-h315-p-k" style="width:125%"/> </a>     -->
+      <a href="UI.html">
+        <div class="https://lh3.googleusercontent.com/sVIMpya5vcmGylDnMks5R1chR70XTaz0PqCpur8xtW_57cXS5n_radLRZvmvhu34z9Fmyghg_v0uXuHgYg49FGGTulUVZpkjJlFrYut-GVnCSE-SJ9B_Czt2sxCxjOSV1Tla_KUHD94=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/sVIMpya5vcmGylDnMks5R1chR70XTaz0PqCpur8xtW_57cXS5n_radLRZvmvhu34z9Fmyghg_v0uXuHgYg49FGGTulUVZpkjJlFrYut-GVnCSE-SJ9B_Czt2sxCxjOSV1Tla_KUHD94=w600-h315-p-k" style="width:125%"/>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Additional Features.</h3>
+      <p><i class="fa fa-bar-chart w3-margin-right"></i>Other features incorporate data analytics services that will monitor the traffic around the valuable.</p>
+      <p><i class="fa fa-eye w3-margin-right"></i>This will give you information as to what time of day is busiest, which valuables are interacted with the most and will also track the environment around it.</p>
+      <p><a href="#pricing" class="w3-button w3-black"><i class="fa fa-th"> </i> Choose your package</a></p>
+    </div>
+    <div class="w3-col m6">
+      <!-- <a href="https://lh3.googleusercontent.com/lzcnJ4NrfBHxpL7GPM6iP7BUAFlgdrl49oU4Jp3YSkdDYFXLjf0K1XFD8QA9a5s7qAHXfXLJIgy58cbLQPVPar9iWP1fdsEH1qXOFRJxcN1sNZnJ0rtaw8GY4QT9XaKdIzFK_7Ef2a0=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/lzcnJ4NrfBHxpL7GPM6iP7BUAFlgdrl49oU4Jp3YSkdDYFXLjf0K1XFD8QA9a5s7qAHXfXLJIgy58cbLQPVPar9iWP1fdsEH1qXOFRJxcN1sNZnJ0rtaw8GY4QT9XaKdIzFK_7Ef2a0=w600-h315-p-k" style="width:125%"/> </a>     -->
+      <a href="UI.html">
+        <div class="https://lh3.googleusercontent.com/lzcnJ4NrfBHxpL7GPM6iP7BUAFlgdrl49oU4Jp3YSkdDYFXLjf0K1XFD8QA9a5s7qAHXfXLJIgy58cbLQPVPar9iWP1fdsEH1qXOFRJxcN1sNZnJ0rtaw8GY4QT9XaKdIzFK_7Ef2a0=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/lzcnJ4NrfBHxpL7GPM6iP7BUAFlgdrl49oU4Jp3YSkdDYFXLjf0K1XFD8QA9a5s7qAHXfXLJIgy58cbLQPVPar9iWP1fdsEH1qXOFRJxcN1sNZnJ0rtaw8GY4QT9XaKdIzFK_7Ef2a0=w600-h315-p-k" style="width:125%"/>
+        <p>Click on both images to check out the UI</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">WHAT WE PROTECT</h3>
+  <p class="w3-center w3-large">No valuable will go unprotected</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/qIDPrksCpoTPlWSC1D19YCLanVPNwCZbPDgd1NM6oci0oIsJgd11qY0ATax7PR69QMGn_YvXFlxmu3_3-z5gWBEdLB8h8Ml_gftctI33RF8IWtZO-AsaQKQw7lnM5Q_NPYDyjhBXhuo=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/qIDPrksCpoTPlWSC1D19YCLanVPNwCZbPDgd1NM6oci0oIsJgd11qY0ATax7PR69QMGn_YvXFlxmu3_3-z5gWBEdLB8h8Ml_gftctI33RF8IWtZO-AsaQKQw7lnM5Q_NPYDyjhBXhuo=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gallery"/> </a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/c7nXWaabbu_In5b72NDabwodEDOR57BWjFtBp3xuM3WL7lWsyQY7FOd4PMPeqOHJKtacRJ400qEE8Go6bPRX_IvOGYQLxADc2gkDF9uVvbgVWhWNUmX9kkdBs8tLFkyTDve08x96NBQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/c7nXWaabbu_In5b72NDabwodEDOR57BWjFtBp3xuM3WL7lWsyQY7FOd4PMPeqOHJKtacRJ400qEE8Go6bPRX_IvOGYQLxADc2gkDF9uVvbgVWhWNUmX9kkdBs8tLFkyTDve08x96NBQ=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Watch"/> </a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/VvTx0RGHm9ca0ZQYW7vuL18dtAfsxcKcrd9mLHvujm78H8sh4sxomStJXpw63Cjfdijx9LS-XaLdV__Rq6g-ZtlPnuroVICmJYNsYUUkOT8FBVhod4h8MrtPn7A0Pk3oAZyGGDWLSIs=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/VvTx0RGHm9ca0ZQYW7vuL18dtAfsxcKcrd9mLHvujm78H8sh4sxomStJXpw63Cjfdijx9LS-XaLdV__Rq6g-ZtlPnuroVICmJYNsYUUkOT8FBVhod4h8MrtPn7A0Pk3oAZyGGDWLSIs=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wine"/> </a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/s84dWOzFCqqbVfEynU7UdKao0o1Sf9b_ZVt9i9pxmk4oUavSw__VoMdeoxuY86eRqhCkkeJJTq2TnYV7tsZx91Y1SZyXyy0X8x1tkhdSFZAl-RjBpAtvTXRZWAcVGbZW_rGDjkkzAQI=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/s84dWOzFCqqbVfEynU7UdKao0o1Sf9b_ZVt9i9pxmk4oUavSw__VoMdeoxuY86eRqhCkkeJJTq2TnYV7tsZx91Y1SZyXyy0X8x1tkhdSFZAl-RjBpAtvTXRZWAcVGbZW_rGDjkkzAQI=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Worstation"/> </a>
+  </div>
+</div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/MgbNrs6wz7qtAEwyIqVHyzc1ORxz-zSCbvYzqMIIBM9tvR3mLFJVtsbMtbpClm4zoz_Ax-GjPIU9JIr3kjDRvVz6H7khR2KbwqvQMvhPEuNe425rdO9zTnDgF3WxSux2j9pAh9bf4D0=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/MgbNrs6wz7qtAEwyIqVHyzc1ORxz-zSCbvYzqMIIBM9tvR3mLFJVtsbMtbpClm4zoz_Ax-GjPIU9JIr3kjDRvVz6H7khR2KbwqvQMvhPEuNe425rdO9zTnDgF3WxSux2j9pAh9bf4D0=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sculpture"/> </a>      <!-- <img src="/desktop/violin.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Musical Instruments"> -->
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/MsWBx_kjT9thPPZq_6oYrKkSQO5pe1tAgedZH7WE3iEdDRK0qv8X6SMnmHurgOHMdbsV-ex-_yzC4rE5_o68vq0jlFrZjOoxAXUW6NdEL5ehtOaAfPYtYajK_2Cx04aUmKdaWV11HGA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/MsWBx_kjT9thPPZq_6oYrKkSQO5pe1tAgedZH7WE3iEdDRK0qv8X6SMnmHurgOHMdbsV-ex-_yzC4rE5_o68vq0jlFrZjOoxAXUW6NdEL5ehtOaAfPYtYajK_2Cx04aUmKdaWV11HGA=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Instruments"/> </a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/_mN7lrANz0hMaFrRE59zfcD_yAe0MCX4S2GT-vZPaJYodakZf493Bi27bLwiGSYb-V7zt1YwCT6RArxYTYVKetju4i-C50EmT-GslTP1bSbiNqmFmkZLkXUa9CKJ0bnxTRFNBmzk4Kg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/_mN7lrANz0hMaFrRE59zfcD_yAe0MCX4S2GT-vZPaJYodakZf493Bi27bLwiGSYb-V7zt1YwCT6RArxYTYVKetju4i-C50EmT-GslTP1bSbiNqmFmkZLkXUa9CKJ0bnxTRFNBmzk4Kg=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jewelry"/> </a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://lh3.googleusercontent.com/ksFPXX3BqF4xfIGGN2sxPlUMvjkuoyV05e6jgsLaSFwd9R5bJSv_PE9b7FC5czJnS_5xq1Ryi5dxsBGr2uWVqHb-ZgB_bFKiVLEMYD1Mnt_MdHtmsKgJw9Jf2P2GH3M0jUN4kqrN30o=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/ksFPXX3BqF4xfIGGN2sxPlUMvjkuoyV05e6jgsLaSFwd9R5bJSv_PE9b7FC5czJnS_5xq1Ryi5dxsBGr2uWVqHb-ZgB_bFKiVLEMYD1Mnt_MdHtmsKgJw9Jf2P2GH3M0jUN4kqrN30o=w600-h315-p-k" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Home Collection"/> </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>We are a team of Electrical and Electronic engineers from Imperial College London.</p>
+      <p>EEE covers a both hardware and computer engineering so whatever your needs, we'll find the most secure solution!<br></p>
+      <h3>What tech do we use.</h3>
+      <p><i class="fa fa-line-chart w3-margin-right"></i>Accelerometer.</p>
+      <p><i class="fa fa-arrows-h w3-margin-right"></i>Laser range finding sensor.<br></p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-gear w3-margin-right"></i>Sensor Electronics</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-info-circle w3-margin-right"></i>Data Analytics</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Front-End Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Demo Video -->
+<div class="w3-container" style="padding:128px 16px">
+  <h3 class="w3-center">BEHIND THE SCENES</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+
+    <p>
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/vhgpHqKNLUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+  </div>
+
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The minds keeping everything safe</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://lh3.googleusercontent.com/Rs_YhGjeJHoyylMiFdeaJAu9lywucIzmeJoBAb3YZctIdtzK9gVnf2nKpafzFCkf9-kZzABtx5_CCgUf0alMlEhz6SZ_qCvYED5EJUaHDPZj4sP1jA6Mrkqv7QG0JEPPIUptMDdBbhQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/Rs_YhGjeJHoyylMiFdeaJAu9lywucIzmeJoBAb3YZctIdtzK9gVnf2nKpafzFCkf9-kZzABtx5_CCgUf0alMlEhz6SZ_qCvYED5EJUaHDPZj4sP1jA6Mrkqv7QG0JEPPIUptMDdBbhQ=w600-h315-p-k" alt="Marta" style="width:100%"/> </a>
+        <!-- <img src="\desktop\Imperial\Year 3\Embedded Systems\Webpage\marta.jpg" alt="Marta" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Marta Andronic</h3>
+          <p class="w3-opacity">CEO & App Designer</p>
+          <p>Electronic and Electrical Engineering MEng student at Imperial College London.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://lh3.googleusercontent.com/iUuv8MNUqSW_9It5uGBKcqkG-WrH_i5qJyZoV095KxrpD3K4AV0d_SQEBSp_qH_o-yIqOF9bT8P3r9wIgtXVVHK0HjVvPfp7VhnMSbGdcHJjlgW5IKkdfYnGEd9dngsAvfmkttsYan8=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/iUuv8MNUqSW_9It5uGBKcqkG-WrH_i5qJyZoV095KxrpD3K4AV0d_SQEBSp_qH_o-yIqOF9bT8P3r9wIgtXVVHK0HjVvPfp7VhnMSbGdcHJjlgW5IKkdfYnGEd9dngsAvfmkttsYan8=w600-h315-p-k" alt="Diego" style="width:100%"/> </a>
+        <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Diego Pastor Diaz</h3>
+          <p class="w3-opacity">COO & Electronics Engineer</p>
+          <p>Electronic and Electrical Engineering MEng student at Imperial College London.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://lh3.googleusercontent.com/oQzdNfiT4J12T6URx-BNkj2JZHQD3MlZYJytlfUtMgckxhHN4ihndYeNR2rzkW9wcr-rjtlTcb82ZN5V89I2sNOarfJama_sDNwuApA0m_amExeGfMV9EfdggwXHBujb2skDcTw8inc=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oQzdNfiT4J12T6URx-BNkj2JZHQD3MlZYJytlfUtMgckxhHN4ihndYeNR2rzkW9wcr-rjtlTcb82ZN5V89I2sNOarfJama_sDNwuApA0m_amExeGfMV9EfdggwXHBujb2skDcTw8inc=w600-h315-p-k" alt="Karina" style="width:100%"/> </a>
+        <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Karina Goel</h3>
+          <p class="w3-opacity">CIO & Software Engineer</p>
+          <p>Electronic and Electrical Engineering MEng student at Imperial College London.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://lh3.googleusercontent.com/fMbvjJMKWEAU_SuQjprspoDxzsZv4kO8wEJztZBsMC4T1e0IlDs86kYapHTf9tV72rFz9sfE7oPohs98U48Hs62y0cqx1PZf_IDOUpAkBm71G-bTG7Eki444-XDW8ZISRGO7akMpvhk=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/fMbvjJMKWEAU_SuQjprspoDxzsZv4kO8wEJztZBsMC4T1e0IlDs86kYapHTf9tV72rFz9sfE7oPohs98U48Hs62y0cqx1PZf_IDOUpAkBm71G-bTG7Eki444-XDW8ZISRGO7akMpvhk=w600-h315-p-k" alt="Gabrielle" style="width:100%"/> </a>
+        <!-- <img src="/w3images/team4.jpg" alt="Dan" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Gabrielle Rubin</h3>
+          <p class="w3-opacity">CMO & Web Designer</p>
+          <p>Electronic and Electrical Engineering MEng student at Imperial College London.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10</b> Items</li>
+        <li class="w3-padding-16"><b>24hr</b> Alarm Surveillance</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 150</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>Environment</b> Tracking</li>
+        <li class="w3-padding-16"><b>20</b> Items</li>
+        <li class="w3-padding-16"><b>24hr</b> Alarm Surveillance</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 250</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>Data</b> Analytics</li>
+        <li class="w3-padding-16"><b>Environment</b> Tracking</li>
+        <li class="w3-padding-16"><b>100</b> Items</li>
+        <li class="w3-padding-16"><b>24hr</b> Alarm Surveillance</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 1000</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:50px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> London, UK</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +44 2022334455</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: DrEEEmTeam@imperial.ac.uk</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <a href="https://lh3.googleusercontent.com/hyK8eGf9mGz1v_MVkbk-kSMvk7jxUBEzKE6HBqQ4b_j9QLQW1rhf9ZZjhXFrEBvxrTZrFw8cqRwGGs_bYT_2HdKPV-DJHOmudBjjrDisSZJzn2WTklLTwaCfLMw_JkrsNt9Vz6RErKg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/hyK8eGf9mGz1v_MVkbk-kSMvk7jxUBEzKE6HBqQ4b_j9QLQW1rhf9ZZjhXFrEBvxrTZrFw8cqRwGGs_bYT_2HdKPV-DJHOmudBjjrDisSZJzn2WTklLTwaCfLMw_JkrsNt9Vz6RErKg=w344-h315-p-k" alt="Background" style="width:30%"/> </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
